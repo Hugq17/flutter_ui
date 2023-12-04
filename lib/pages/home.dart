@@ -16,21 +16,9 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
-        leading: Container(
-          margin: EdgeInsets.all(10),
-          alignment: Alignment.center,
-          child: SvgPicture.asset(
-            'assets/icons/left-chevron-svgrepo-com.svg',
-            height: 20,
-            width: 20,
-          ),
-          decoration: BoxDecoration(
-            color: Color(0xffF7F8F8),
-            borderRadius: BorderRadius.circular(10),
-          ),
-        ),
-        actions: [
-          Container(
+        leading: GestureDetector(
+          onTap: () {},
+          child: Container(
             margin: EdgeInsets.all(10),
             alignment: Alignment.center,
             child: SvgPicture.asset(
@@ -41,6 +29,25 @@ class HomePage extends StatelessWidget {
             decoration: BoxDecoration(
               color: Color(0xffF7F8F8),
               borderRadius: BorderRadius.circular(10),
+            ),
+          ),
+        ),
+        actions: [
+          GestureDetector(
+            onTap: () {},
+            child: Container(
+              margin: EdgeInsets.all(10),
+              alignment: Alignment.center,
+              width: 37,
+              child: SvgPicture.asset(
+                'assets/icons/dots-2-svgrepo-com.svg',
+                height: 20,
+                width: 20,
+              ),
+              decoration: BoxDecoration(
+                color: Color(0xffF7F8F8),
+                borderRadius: BorderRadius.circular(10),
+              ),
             ),
           ),
         ],
